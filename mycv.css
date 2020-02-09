@@ -1,0 +1,70 @@
+body {
+    background-color: azure;
+    font-family: 'Teko', sans-serif;
+    color: royalblue;
+    font-size: medium;
+}
+div {
+    background-color: whitesmoke;
+    padding: 12px;
+    border: 3px solid gray;
+    border-radius: 7px;
+    transition: all 0.5s ease-in-out;
+}
+div>div:hover {
+    background-color: white;
+    color: blue;
+}
+.glitch {
+    color: blue;
+    animation: hell 2S infinite;
+}
+@keyframes hell {
+    0% { color: turquoise;}
+    50% { color: teal;}
+}
+.container {
+    display: grid;
+    grid-template-columns: 
+      1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "pres pres pres photo"
+    "skill skill exp exp"
+    "learn learn certif certif";
+    height: auto;
+    width: auto;
+}
+.pres {
+    grid-area: pres;
+}
+.photo {
+    grid-area: photo;
+}
+.skill {
+    grid-area: skill
+}
+.exp {
+    grid-area: exp
+}
+.learn {
+    grid-area: learn
+}
+.certif {
+    grid-area: certif
+}
+#button {
+    padding: 2px;
+    border: 1px solid blue;
+    border-radius: 3px;
+    background-color: gainsboro;
+    width: fit-content;
+  }
+  #area {
+    padding: 10px;
+    background-color: #f5f0e3;
+  }
+@keyframes moveCircle1 {
+    0% {cx: 16}
+    100% {cx: 66}
+}
